@@ -51,6 +51,7 @@ nav .content {
 @media screen and (max-width: 950px) {
     nav {
         margin: 0.5rem 0;
+        max-height:9em;
     }
 
     nav .content {
@@ -64,7 +65,6 @@ nav .content {
 
     .menu {
         width: 90%;
-        justify-content: space-between;
     }
 }
 
