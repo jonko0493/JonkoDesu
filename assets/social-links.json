@@ -1,0 +1,123 @@
+[
+    {
+        "locale": "discord-server",
+        "icon": "fa6-brands:discord",
+        "link": "https://discord.gg/nesRSbpeFM",
+        "color": "#5865F2",
+        "display": {
+            "nav": true,
+            "row": true,
+            "stack": true
+        }
+    },
+    {
+        "locale": "bluesky",
+        "icon": "fa6-brands:bluesky",
+        "link": "https://bsky.app/profile/haroohie.club",
+        "color": "#1DA1F2",
+        "display": {
+            "nav": true,
+            "row": true,
+            "stack": true
+        }
+    },
+    {
+        "locale": "youtube",
+        "icon": "fa6-brands:youtube",
+        "link": "https://youtube.com/@haroohie",
+        "color": "#DD0000",
+        "display": {
+            "nav": true,
+            "row": true,
+            "stack": true
+        }
+    },
+    {
+        "locale": "twitter",
+        "icon": "fa6-brands:x-twitter",
+        "link": "https://twitter.com/haroohie",
+        "color": "#111111",
+        "display": {
+            "nav": false,
+            "row": true,
+            "stack": true
+        }
+    },
+    {
+        "locale": "instagram",
+        "icon": "fa6-brands:instagram",
+        "link": "https://instagram.com/haroohie",
+        "color": "#E4405F",
+        "display": {
+            "nav": true,
+            "row": true,
+            "stack": true
+        }
+    },
+    {
+        "locale": "tiktok",
+        "icon": "fa6-brands:tiktok",
+        "link": "https://tiktok.com/@haroohie",
+        "color": "#000000",
+        "display": {
+            "nav": true,
+            "row": true,
+            "stack": true
+        }
+    },
+    {
+        "locale": "mastodon",
+        "icon": "fa6-brands:mastodon",
+        "link": "https://mastodon.online/@haroohie",
+        "color": "#563acc",
+        "display": {
+            "nav": false,
+            "row": true,
+            "stack": true
+        }
+    },
+    {
+        "locale": "threads",
+        "icon": "fa6-brands:threads",
+        "link": "https://threads.net/@haroohie",
+        "color": "#000000",
+        "display": {
+            "nav": false,
+            "row": true,
+            "stack": true
+        }
+    },
+    {
+        "locale": "pixelfed",
+        "icon": "fa6-solid:camera",
+        "link": "https://pixelfed.social/i/web/profile/765728101177834020",
+        "color": "#00ADFB",
+        "display": {
+            "nav": false,
+            "row": true,
+            "stack": true
+        }
+    },
+    {
+        "locale": "facebook",
+        "icon": "fa6-brands:facebook",
+        "link": "https://facebook.com/haroohie",
+        "color": "#1877F2",
+        "display": {
+            "nav": false,
+            "row": true,
+            "stack": true
+        }
+    },
+    {
+        "locale": "pinterest",
+        "icon": "fa6-brands:pinterest",
+        "link": "https://pinterest.com/haroohie/",
+        "color": "#E71E3D",
+        "display": {
+            "nav": false,
+            "row": true,
+            "stack": true
+        }
+    }
+]
