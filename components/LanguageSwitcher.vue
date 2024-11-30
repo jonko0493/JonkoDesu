@@ -35,7 +35,7 @@ form {
 }
 
 form label {
-    color: var(--main-red);
+    color: var(--main-blue);
 }
 
 /* custom select */
@@ -43,7 +43,7 @@ select {
     -webkit-appearance: none;
     -moz-appearance: none;
     appearance: none;
-    background-color: var(--main-red);
+    background-color: var(--main-blue);
     border: none;
     border-radius: 0.45rem;
     color: white;
