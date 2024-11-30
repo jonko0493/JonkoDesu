@@ -9,6 +9,9 @@
                     <div class="header">
                         <div class="info">
                             <h1>{{ doc.title }}</h1>
+                            <div class="image" v-if="doc.image">
+                                <img :src="`/images/project/${doc.image}`" class="image"/>
+                            </div>
                         </div>
                     </div>
                     <div>
@@ -19,6 +22,17 @@
         </NuxtLayout>
     </div>
 </template>
+
+<style scoped>
+.image {
+    display: block;
+    margin: auto;
+    width: 50%;
+}
+img .image {
+    max-width: 100px;
+}
+</style>
 
 <script setup>
 useHead({
