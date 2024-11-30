@@ -1,46 +1,32 @@
 [
     {
-        "locale": "discord-server",
-        "icon": "fa6-brands:discord",
-        "link": "https://discord.gg/nesRSbpeFM",
-        "color": "#5865F2",
-        "display": {
-            "nav": true,
-            "row": true,
-            "stack": true
-        }
-    },
-    {
         "locale": "bluesky",
         "icon": "fa6-brands:bluesky",
-        "link": "https://bsky.app/profile/haroohie.club",
+        "link": "https://bsky.app/profile/jonkode.su",
         "color": "#1DA1F2",
         "display": {
             "nav": true,
-            "row": true,
-            "stack": true
+            "footer": true
         }
     },
     {
         "locale": "youtube",
         "icon": "fa6-brands:youtube",
-        "link": "https://youtube.com/@haroohie",
+        "link": "https://youtube.com/@jonko0493",
         "color": "#DD0000",
         "display": {
             "nav": true,
-            "row": true,
-            "stack": true
+            "footer": true
         }
     },
     {
         "locale": "twitter",
         "icon": "fa6-brands:x-twitter",
-        "link": "https://twitter.com/haroohie",
+        "link": "https://twitter.com/jonko0493",
         "color": "#111111",
         "display": {
             "nav": false,
-            "row": true,
-            "stack": true
+            "footer": true
         }
     },
     {
@@ -49,20 +35,8 @@
         "link": "https://instagram.com/haroohie",
         "color": "#E4405F",
         "display": {
-            "nav": true,
-            "row": true,
-            "stack": true
-        }
-    },
-    {
-        "locale": "tiktok",
-        "icon": "fa6-brands:tiktok",
-        "link": "https://tiktok.com/@haroohie",
-        "color": "#000000",
-        "display": {
-            "nav": true,
-            "row": true,
-            "stack": true
+            "nav": false,
+            "footer": true
         }
     },
     {
@@ -72,8 +46,7 @@
         "color": "#563acc",
         "display": {
             "nav": false,
-            "row": true,
-            "stack": true
+            "footer": true
         }
     },
     {
@@ -83,8 +56,7 @@
         "color": "#000000",
         "display": {
             "nav": false,
-            "row": true,
-            "stack": true
+            "footer": true
         }
     },
     {
@@ -94,30 +66,7 @@
         "color": "#00ADFB",
         "display": {
             "nav": false,
-            "row": true,
-            "stack": true
-        }
-    },
-    {
-        "locale": "facebook",
-        "icon": "fa6-brands:facebook",
-        "link": "https://facebook.com/haroohie",
-        "color": "#1877F2",
-        "display": {
-            "nav": false,
-            "row": true,
-            "stack": true
-        }
-    },
-    {
-        "locale": "pinterest",
-        "icon": "fa6-brands:pinterest",
-        "link": "https://pinterest.com/haroohie/",
-        "color": "#E71E3D",
-        "display": {
-            "nav": false,
-            "row": true,
-            "stack": true
+            "footer": true
         }
     }
 ]

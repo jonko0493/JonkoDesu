@@ -1,8 +1,11 @@
 <template>
     <footer>
+        <div id="socials">
+            <SocialLinks type="footer" />
+        </div>
         <div id="copyright">
-            <div>{{ $t('website') }} &copy; {{ current_year }}, <NuxtLink :to="localePath('/')">Haroohie Translation Club</NuxtLink></div>
-            <div>{{ $t('original-copyright') }}</div>
+            <div>{{ $t('website') }} &copy; {{ current_year }}, <NuxtLink :to="localePath('/')">Jonko</NuxtLink></div>
+            <div>{{ $t('license-pre') }}<NuxtLink to="https://creativecommons.org/licenses/by-sa/4.0/">CC-BY-SA 4.0</NuxtLink>{{ $t('license-post') }}</div>
         </div>
     </footer>
 </template>
@@ -11,7 +14,7 @@
 footer {
     display: flex;
     flex-direction: column;
-    color: var(--main-dark-gray);
+    color: var(--main-light-gray);
     width: 100vw;
     padding: 0.4rem 0;
     padding-top: 1.2rem;

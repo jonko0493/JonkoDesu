@@ -10,6 +10,7 @@
   --main-grey: #898989;
   --main-light-gray: #eeeeee;
   --main-dark-gray: #232323;
+  --accent-gray: #cccccc55;
   --main-shadow: 0.2rem 0.2rem 0.4rem rgba(0, 0, 0, 0.4);
 }
 
@@ -17,7 +18,7 @@
 body {
   /* Font and background color */
   font-family: 'Nunito', sans-serif;
-  color: var(--main-dark-gray);
+  color: var(--main-light-gray);
 
   /* Disable margin and padding */
   margin: 0;
@@ -41,7 +42,7 @@ h3 a,
 h4 a,
 h5 a {
   font-weight: 700;
-  color: black !important;
+  color: white !important;
   text-decoration-color: inherit !important;
 }
 
@@ -52,7 +53,7 @@ h4,
 h5 {
   /* Red underline effect */
   text-decoration: underline;
-  text-decoration-color: var(--main-red) !important;
+  text-decoration-color: #3790ff !important;
   text-underline-offset: 0.6rem;
 }
 

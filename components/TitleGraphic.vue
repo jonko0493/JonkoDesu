@@ -1,13 +1,11 @@
 <template>
     <NuxtLink :to="localePath(to)" class="title-graphic">
-        <object class="graphic-vector" :data="`/images/${graphic}.svg`">
-            <img class="graphic-image" :src="`/images/${graphic}.png`" alt="Title graphic" />
-        </object>
+        <h1>{{ t('jonko') }}</h1>
     </NuxtLink>
 </template>
 
 <script setup>
-const { locale } = useI18n({
+const { locale, t } = useI18n({
   useScope: 'local'
 })
 const localePath = useLocalePath()
@@ -21,6 +19,7 @@ const localePath = useLocalePath()
     display: flex;
     justify-content: center;
     align-items: center;
+    color: white;
 }
 
 .graphic-vector, .graphic-image {

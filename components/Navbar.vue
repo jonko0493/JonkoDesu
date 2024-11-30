@@ -3,7 +3,7 @@
         <div class="content">
             <TitleGraphic class="logo" graphic="club-logo" to="/" />
             <div class="menu">
-                <SocialLinks type="nav" />
+                <SocialLinks type="nav" class="socials" />
                 <LanguageSwitcher />
             </div>
         </div>
@@ -18,10 +18,11 @@ nav {
     margin: 0.5rem 0.75rem;
     border-radius: 0.5rem;
     width: 100%;
-    background-color: #cccccc55;
+    background-color: var(--accent-gray);
     backdrop-filter: blur(0.5rem);
     filter: drop-shadow(0 0 0.5rem #00000055);
     max-width: 80vw;
+    max-height:4.5em;
 }
 
 nav .content {
@@ -55,6 +56,10 @@ nav .content {
     nav .content {
         flex-direction: column;
         align-items: center;
+    }
+
+    nav .socials {
+        visibility: hidden;
     }
 
     .menu {

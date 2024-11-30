@@ -1,18 +1,17 @@
 <template>
     <div class="error" v-if="error.statusCode == 404">
         <h2>Error {{ error.statusCode }} - Not Found</h2>
-        <img src="/images/404.png" alt="We're counting on you to take us home, Nagato!" />
-        <p>Click below to return to a more familiar space!</p>
+        <!-- <img src="/images/404.png" alt="We're counting on you to take us home, Nagato!" /> -->
         <ButtonLink link="/" color="red" icon="fa6-solid:house">Back to Home</ButtonLink>
     </div>
     <div class="error" v-else-if="error.statusCode == 500">
         <h2>Error {{ error.statusCode }} - Internal Error</h2>
         <p>This error can be caused by the uBlock Origin filter "Fanboy's Annoyance." Please consider disabling this filter or disabling uBlock Origin on this site.</p>
-        <p>If you don't have this filter enabled, try refreshing the page (possibly a few times). If that still doesn't work, please <a href="https://github.com/haroohie-club/HaroohieSite/issues">report this issue to us</a>!</p>
+        <p>If you don't have this filter enabled, try refreshing the page (possibly a few times).</p>
     </div>
     <div class="error" v-else>
         <h2>Error {{ error.statusCode }}</h2>
-        <p>Please report this issue to us.</p>
+        <p>If you have time, I'd appreciate you reporting this issue to me.</p>
     </div>
 </template>
 
@@ -40,7 +39,7 @@
     display: flex;
     flex-direction: column;
     min-height: 100vh;
-    background-color: var(--main-light-gray);
+    background-color: var(--main-dark-gray);
     background-image: url('/images/haruhi-calisthenic.png');
     background-repeat: repeat;
     justify-content: center;
@@ -59,8 +58,8 @@
 
 <script setup>
 definePageMeta({
-    title: 'Error - Haroohie Translation Club',
-    description: 'Welcome to the Haroohie Translation Club! We\'re dedicated to translating games from the Haruhi Suzumiya series into English!',
+    title: 'Error - Jonko',
+    description: 'Jonko\'s spot for all his projects and such',
 })
 
 const props = defineProps({

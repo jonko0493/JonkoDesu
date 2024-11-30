@@ -31,7 +31,7 @@ export default {
         head: {
             charset: 'utf-16',
             viewport: 'width=device-width, initial-scale=1',
-            title: 'Haroohie Translation Club'
+            title: "Jonko's Site"
         }
     },
 

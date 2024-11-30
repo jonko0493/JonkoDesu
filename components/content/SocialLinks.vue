@@ -5,20 +5,11 @@
             <Icon :name="social.icon" />
         </NuxtLink>
     </div>
-    <div v-else-if="type == 'stack'" class="stack">
-        <ButtonLink :link="localePath(stackTopper.link)" color="red" type="top-piece" :icon="stackTopper.icon" fullwidth>
-            {{ $t(stackTopper.locale) }}
-        </ButtonLink>
-        <ButtonLink v-for="social in socials.filter(s => s.display.row)" :icon="social.icon" :link="social.link" rel="me"
-            :rgb-color="social.color" :type="socials.filter(s => s.display.row).indexOf(social) === (socials.filter(s => s.display.row).length - 1) ? 'bottom-piece' : 'mid-piece'" fullwidth>
-            {{ $t(social.locale) }}
-        </ButtonLink>
-    </div>
-    <ButtonRow v-else>
-        <ButtonLink v-for="social in socials.filter(s => s.display.row)" :icon="social.icon" :link="social.link" rel="me"
-            :rgb-color="social.color">
-            {{ $t(social.locale) }}
-        </ButtonLink>
+    <ButtonRow v-else class="footer">
+        <NuxtLink v-for="social in socials.filter(s => s.display.footer)" :href="social.link" rel="me"
+            :style="`color: ${social.color}`">
+            <Icon :name="social.icon" />
+        </NuxtLink>
     </ButtonRow>
 </template>
 
@@ -32,16 +23,7 @@ const { type, stackTopper } = defineProps({
     type: {
         type: String,
         required: false,
-        default: 'row'
-    },
-    stackTopper: {
-        type: Object,
-        required: false,
-        default: {
-            link: '/',
-            icon: 'fa6-solid:house',
-            locale: 'home'
-        }
+        default: 'nav'
     }
 })
 </script>
@@ -56,10 +38,12 @@ const { type, stackTopper } = defineProps({
     filter: drop-shadow(0.4vh 0.4vh 0.2vh rgba(0, 0, 0, 0.3));
 }
 
-.stack {
+.footer {
     display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    filter: drop-shadow(0.4vh 0.4vh 0.2vh rgba(0, 0, 0, 0.3));
+    justify-content: center;
+    flex-direction: row;
+    gap: 1rem;
+    filter: drop-shadow(0vh 0vh 0.3vh var(--main-light-gray));
+    font-size: 1.8em;
 }
 </style>

@@ -1,7 +1,12 @@
 ---
-title: Haroohie Translation Club
-description: The homepage of the Haroohie Translation Club, translators of Haruhi Suzumiya games
-locale: en
+title: Jonko the ROM Hacker
+description: Jonko's homepage
 ---
 
-We're the Haroohie Translation Club&mdash;dedicated to translating the Haruhi Suzumiya games into English!
+I'm Jonko, a ROM hacker and YouTuber!
+
+My primary work is with the [Haroohie Translation Club](https://haroohie.club), where I serve as project lead and main ROM hacker.
+
+You may also know me from my [YouTube channel](https://youtube.com/@jonko0493) or my [blogs](https://haroohie.club/author/jonko) where I explain how ROM hacking works.
+
+I also dabble with homebrew and emulator development.
