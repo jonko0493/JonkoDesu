@@ -34,6 +34,18 @@ img .image {
 }
 </style>
 
+<style>
+.small-image {
+    max-width: 150px;
+}
+
+@media screen and (max-width: 36rem) {
+    .small-image {
+        max-width: 70px;
+    }
+}
+</style>
+
 <script setup>
 useHead({
     titleTemplate: (blogTitle) => {
