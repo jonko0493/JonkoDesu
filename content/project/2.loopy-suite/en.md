@@ -31,7 +31,11 @@ head:
 The Loopy Suite is a suite of full-fledged editors for the Haruhi Suzumiya games.
 
 ## Serial Loops
-[Serial Loops](https://haroohie.club/chokuretsu/serial-loops) is an editor for Suzumiya Haruhi no Chokuretsu (The Series of Haruhi Suzumiya).
+<center>
+  <img src="/images/project/serial-loops.png" width="150">
+</center>
+
+[Serial Loops](https://haroohie.club/chokuretsu/serial-loops) is an editor for _Suzumiya Haruhi no Chokuretsu_ (The Series of Haruhi Suzumiya).
 
 ## Parallel Loops
 Parallel Loops is an upcoming editor for Suzumiya Haruhi no Heiretsu (The Parallel of Haruhi Suzumiya).

@@ -34,4 +34,6 @@ Currently, we are translating [Suzumiya Haruhi no Chokuretsu](https://haroohie.c
 
 ## Reverse-Engineering Work
 
-As part of my work, I have spent a considerable amount of time reverse-engineering these games.
+As part of my work, I have spent a considerable amount of time reverse-engineering these games. I have documented my findings on the wikis for each of the game's utilities:
+* [Suzumiya Haruhi no Chokuretsu](https://github.com/haroohie-club/ChokuretsuTranslationUtility/wiki/)
+* [Suzumiya Haruhi no Heiretsu](https://github.com/haroohie-club/HeiretsuTranslationUtility/wiki/)
