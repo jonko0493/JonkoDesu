@@ -31,6 +31,10 @@ head:
 ルーピースイートは涼宮ハルヒのビデオゲームのための本格的な編集するプログラムスイートです。
 
 ## シリアル・ループス
+<center>
+  <img src="/images/project/serial-loops.png" alt="シリアル・ループスのロゴです" class="small-image">
+</center>
+
 [シリアル・ループス](https://haroohie.club/chokuretsu/serial-loops)は涼宮ハルヒの直列を編集するためのプログラムです。
 
 ## パラレル・ループス

@@ -3,10 +3,10 @@ title: ROMハッカーのジョンコ
 description: ジョンコのホームページです
 ---
 
-僕はジョンコです。ROMハッキングしたり、YouTube動画を作っています！
+僕はジョンコです。ROMハッキングをしたり、YouTube動画を作っています！
 
-僕のメイン役は[ハルーヒー翻訳クラブ](https://haroohie.club)のプロジェクト長とROMハッキングのリーダーです。
+僕のメインの役割は[ハルーヒー翻訳クラブ](https://haroohie.club)のプロジェクトとROMハッキングのリーダーです。
 
-それとも、僕の[YouTubeチャンネル](https://youtube.com/@jonko0493)か[ブログ](https://haroohie.club/author/jonko)から僕を知っているかもしれないです。
+僕のことは、[YouTubeチャンネル](https://youtube.com/@jonko0493)か[ブログ](https://haroohie.club/author/jonko)で知られているかもしれないです。
 
-エミュレーターやホームブリューを開発をかじります。
+また、エミュレーターやホームブリューを開発をかじっています。
