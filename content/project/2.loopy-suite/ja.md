@@ -1,6 +1,6 @@
 ---
 title: &title 'ルーピースイート'
-description: &desc '色々な涼宮ハルヒのゲームを全然編集するプログラムスイートです。'
+description: &desc '色々な涼宮ハルヒのゲームを完全に編集するプログラムスイートです。'
 image: 'loopy-suite.png'
 head:
   meta:
@@ -11,7 +11,7 @@ head:
   - property: 'og:image'
     content: &img 'https://jonkode.su/images/project/loopy-suite.png'
   - name: 'og:image:alt'
-    value: 'A vector graphic of '
+    value: '「LO」の文字を重ね合わせた長門有希のヴェクターグラフィックです。'
   - property: 'og:url'
     content: 'https://jonkode.su/project/loopy-suite'
   - property: 'og:type'
@@ -28,7 +28,7 @@ head:
     value: 'summary_large_image'
 ---
 
-ルーピースイートは涼宮ハルヒのビデオゲームのための本格的な編集するプログラムスイートです。
+ルーピースイートは涼宮ハルヒのビデオゲームのための本格的な編集をするプログラムセットです。
 
 ## シリアル・ループス
 <center>

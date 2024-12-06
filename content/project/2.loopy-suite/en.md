@@ -11,7 +11,7 @@ head:
   - property: 'og:image'
     content: &img 'https://jonkode.su/images/project/loopy-suite.png'
   - name: 'og:image:alt'
-    value: 'A vector graphic of '
+    value: 'A vector graphic of Yuki Nagato with the letters "LO" superimposed'
   - property: 'og:url'
     content: 'https://jonkode.su/project/loopy-suite'
   - property: 'og:type'
@@ -28,7 +28,7 @@ head:
     value: 'summary_large_image'
 ---
 
-The Loopy Suite is a suite of full-fledged editors for the Haruhi Suzumiya games.
+The Loopy Suite is a set of full-fledged editors for the Haruhi Suzumiya games.
 
 ## Serial Loops
 <center>
