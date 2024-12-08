@@ -30,7 +30,7 @@ head:
 
 The Haroohie Translation Club is a group of passionate individuals dedicated to translating the Haruhi Suzumiya video games into various languages. I serve as the project lead and chief ROM hacker for the group.
 
-Currently, we are translating [Suzumiya Haruhi no Chokuretsu](https://haroohie.club/chokuretsu) (The Series of Haruhi Suzumiya) into English, Italian, Brazilian Portuguese, Russian, and Arabic. We are also supporting [Qi Busiyi Hanhuazu (七不思议汉化组)](https://7.xzonn.top/) in translating the game into Chinese. We also have the translation of Suzumiya Haruhi no Heiretsu (The Parallel of Haruhi Suzumiya) in flight and are in the planning/investigation stages of the other games.
+Currently, we are translating [Suzumiya Haruhi no Chokuretsu](https://haroohie.club/chokuretsu) (The Series of Haruhi Suzumiya) into English, French, Italian, Brazilian Portuguese, Russian, and Arabic. We are also supporting [Qi Busiyi Hanhuazu (七不思议汉化组)](https://7.xzonn.top/) in translating the game into Chinese. We also have the translation of Suzumiya Haruhi no Heiretsu (The Parallel of Haruhi Suzumiya) in flight and are in the planning/investigation stages of the other games.
 
 ## Reverse-Engineering Work
 
