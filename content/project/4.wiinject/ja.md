@@ -21,4 +21,4 @@ head:
     value: 'summary_large_image'
 ---
 
-WiinjectはWiiゲームのRiivolutionnのASMパッチを作るための道具です。
+WiinjectはWiiゲームのRiivolutionのASMパッチを作るための道具です。

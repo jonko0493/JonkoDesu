@@ -1,6 +1,6 @@
 ---
 title: &title 'NitroPacker（ナイトロパッカー）'
-description: &desc 'Nintendo DSゲームをアンパックし、パックし、ASMハックを付けるための道具です。'
+description: &desc 'Nintendo DSゲームをアンパック・パック・ASMハックを適用するための道具です。'
 head:
   meta:
   - property: 'og:title'
@@ -21,4 +21,4 @@ head:
     value: 'summary_large_image'
 ---
 
-[NitroPacker](https://github.com/haroohie-club/NitroPacker)（ナイトロパッカー）はNintendo DSゲームをアンパックしパックするための道具です。ASMハックも付けられます。[Ermii](https://www.ermiisoft.net/)と[Gericom](https://github.com/Gericom)は[マリオカートツールボックス](https://github.com/HaroohiePals/MarioKartToolbox)を作りながら元々に開発しました。僕の責任になったあと、近代的な.NETにポートし、もっとゲームの種類を編集できることを追加しました。
+[NitroPacker](https://github.com/haroohie-club/NitroPacker)（ナイトロパッカー）はNintendo DSゲームをアンパックし、パックするための道具です。ASMハックも適用できます。[Ermii](https://www.ermiisoft.net/)と[Gericom](https://github.com/Gericom)は、元々[マリオカートツールボックス](https://github.com/HaroohiePals/MarioKartToolbox)を作りながら開発しました。僕が責任者になってから、近代的な.NETにポートし、もっと多くのゲームの種類をアンパックできる機能を追加しました。
