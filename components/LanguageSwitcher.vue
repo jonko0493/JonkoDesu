@@ -24,7 +24,7 @@ function getLanguageName(languageCode) {
     return displayName[0].toUpperCase() + displayName.substring(1);
 }
 const switchLocalePath = useSwitchLocalePath()
-const switchLocale = async (l) => {
+const switchLocale = async () => {
     await navigateTo(switchLocalePath(document.getElementById('locale-select').value))
 }
 </script>
