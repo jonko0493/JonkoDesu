@@ -18,14 +18,17 @@ const { locale } = useI18n({
     useScope: 'local'
 })
 const localePath = useLocalePath()
-const switchLocalePath = useSwitchLocalePath()
-function switchLocale(l) {
-    window.location.replace(switchLocalePath(l))
-}
 function getLanguageName(languageCode) {
     const nameGenerator = new Intl.DisplayNames(languageCode, { type: 'language' });
     const displayName = nameGenerator.of(languageCode);
     return displayName[0].toUpperCase() + displayName.substring(1);
+}
+</script>
+
+<script>
+const switchLocalePath = useSwitchLocalePath()
+function switchLocale(l) {
+    window.location.replace(switchLocalePath(l))
 }
 </script>
 
