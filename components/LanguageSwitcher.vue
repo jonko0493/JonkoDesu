@@ -30,8 +30,8 @@ const switchLocalePath = useSwitchLocalePath()
 function switchLocale(l) {
     try {
         window.location.href = switchLocalePath(l)
-    } catch {
-        alert(window)
+    } catch (e) {
+        alert(e)
     }
 }
 </script>
