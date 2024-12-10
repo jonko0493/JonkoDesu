@@ -23,16 +23,9 @@ function getLanguageName(languageCode) {
     const displayName = nameGenerator.of(languageCode);
     return displayName[0].toUpperCase() + displayName.substring(1);
 }
-</script>
-
-<script>
 const switchLocalePath = useSwitchLocalePath()
-function switchLocale(l) {
-    try {
-        window.location.href = switchLocalePath(l)
-    } catch (e) {
-        alert(e)
-    }
+const switchLocale = async(l) => {
+    await navigateTo(switchLocalePath(l))
 }
 </script>
 

@@ -40,7 +40,6 @@
     flex-direction: column;
     min-height: 100vh;
     background-color: var(--main-dark-gray);
-    background-image: url('/images/haruhi-calisthenic.png');
     background-repeat: repeat;
     justify-content: center;
 }
