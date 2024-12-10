@@ -28,7 +28,11 @@ function getLanguageName(languageCode) {
 <script>
 const switchLocalePath = useSwitchLocalePath()
 function switchLocale(l) {
-    window.location.replace(switchLocalePath(l))
+    try {
+        window.location.href = switchLocalePath(l)
+    } catch {
+        alert(window.location.href)
+    }
 }
 </script>
 
