@@ -20,7 +20,7 @@ const { locale } = useI18n({
 const localePath = useLocalePath()
 const switchLocalePath = useSwitchLocalePath()
 function switchLocale(l) {
-    window.location.href = switchLocalePath(l)
+    window.location.replace(switchLocalePath(l))
 }
 function getLanguageName(languageCode) {
     const nameGenerator = new Intl.DisplayNames(languageCode, { type: 'language' });
