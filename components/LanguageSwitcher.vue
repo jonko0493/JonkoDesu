@@ -3,7 +3,7 @@
         <label class="shadow" for="locale-select">
             <Icon name="fa6-solid:language" />
         </label>
-        <select class="shadow" id="locale-select" :value="locale" v-model="$i18n.locale" v-on:change="switchLocale(this.value)">
+        <select class="shadow" id="locale-select" v-model="$i18n.locale" v-on:change="switchLocale()">
             <option v-for="l in availableLocales" :value="l">
                 <span>{{ getLanguageName(l) }}</span>
                 <span class="lozenge" v-if="locale == l">&nbsp;&#x23F7;</span>
@@ -24,8 +24,8 @@ function getLanguageName(languageCode) {
     return displayName[0].toUpperCase() + displayName.substring(1);
 }
 const switchLocalePath = useSwitchLocalePath()
-const switchLocale = async(l) => {
-    await navigateTo(switchLocalePath(l))
+const switchLocale = async (l) => {
+    await navigateTo(switchLocalePath(document.getElementById('locale-select').value))
 }
 </script>
 
