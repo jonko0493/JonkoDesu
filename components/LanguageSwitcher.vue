@@ -31,7 +31,7 @@ function switchLocale(l) {
     try {
         window.location.href = switchLocalePath(l)
     } catch {
-        alert(window.location.href)
+        alert(window)
     }
 }
 </script>
