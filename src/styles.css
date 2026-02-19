@@ -1,15 +1,230 @@
 @import "tailwindcss";
 
+:root {
+  --gradient-top-color: #343E5E;
+  --gradient-bottom-color: #6C81C4;
+  --button-background: #E2DAFC;
+  --button-background-hover: #C2BAFC;
+  --button-text: #756AA0;
+}
+
+html {
+  overflow-x: hidden;
+  overflow-y: hidden;
+}
+
 body {
-  @apply m-0;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
-    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
-    sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background: linear-gradient(180deg, var(--gradient-top-color) 0%, var(--gradient-bottom-color) 100%);
+  height: 100vh;
+  color: white;
 }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
+}
+
+/* Home page (CTA) */
+.jonko-container {
+  min-height: 100vh;
+  display: flex;
+  padding: 0 10%;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 2rem;
+  cursor: pointer;
+  will-change: opacity, transform;
+  transform: translateY(0);
+  opacity: 1;
+}
+
+.jonko-cta {
+  margin: 0;
+  padding-right: 6rem;
+  transition: opacity 360ms ease, transform 360ms ease;
+}
+
+.jonko-cta.exiting {
+  opacity: 0;
+  transform: translateY(-20px) scale(0.99);
+  pointer-events: none;
+}
+
+.jonko-cta-header {
+  font-weight: 700;
+  font-style: Bold;
+  font-size: 48px;
+  line-height: 100%;
+  letter-spacing: 0%;
+  margin: 0 0 20px 0;
+}
+
+.jonko-cta-subheader {
+  font-weight: 400;
+  font-style: Regular;
+  font-size: 20px;
+  line-height: 100%;
+  letter-spacing: 0%;
+}
+
+.jonko-cta-button {
+  background-color: var(--button-background);
+  color: var(--button-text);
+  padding: 11px 20px;
+  margin-top: 40px;
+  border-radius: 10px;
+  font-weight: 700;
+  font-style: Bold;
+  font-size: 16px;
+  line-height: 100%;
+  letter-spacing: 0%;
+  text-align: center;
+  text-transform: uppercase;
+  cursor: pointer;
+  transition: background-color 240ms ease;
+  display: inline-block;
+}
+
+.jonko-cta-button:hover {
+  background-color: var(--button-background-hover);
+}
+
+.jonko-room-start-container {
+  height: 100%;
+  margin: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.jonko-room-start {
+  width: 65vw;
+  max-width: 65vw;
+  margin: 0 -200px;
+  display: block;
+  object-fit: contain;
+  transition: width 360ms ease, max-width 360ms ease, margin 360ms ease, opacity 360ms ease;
+}
+
+.jonko-room-start.exiting {
+  width: 80vw;
+  max-width: 80vw;
+  margin: -17vh 0 0 -30vw;
+}
+
+@media (max-width: 1024px) {
+  .jonko-container {
+    padding: 0 8%;
+  }
+
+  .jonko-cta-header {
+    font-size: 44px;
+  }
+
+  .jonko-room-start {
+    width: 70vw;
+    margin: 0 -140px;
+  }
+}
+
+@media (max-width: 768px) {
+  .jonko-container {
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 6% 6%;
+    gap: 1.5rem;
+  }
+
+  .jonko-cta {
+    padding-right: 0;
+    text-align: center;
+  }
+
+  .jonko-cta-header {
+    font-size: 40px;
+    margin-top: 24px;
+  }
+
+  .jonko-cta-subheader {
+    font-size: 18px;
+  }
+
+  .jonko-cta-button {
+    width: min(86%, 360px);
+    padding: 14px 22px;
+    margin-top: 28px;
+  }
+
+  .jonko-room-start-container {
+    height: auto;
+    margin: 20px 0 60px 0;
+  }
+
+  .jonko-room-start {
+    width: 86vw;
+    max-width: 520px;
+    margin: 0;
+    transform: translateY(0);
+    max-height: none;
+  }
+
+  .jonko-room-start.exiting {
+    width: 80vw;
+    max-width: 80vw;
+    margin: 0;
+  }
+}
+
+@media (max-width: 420px) {
+  .jonko-cta-header {
+    font-size: 34px;
+    line-height: 1.05;
+  }
+
+  .jonko-cta-subheader {
+    font-size: 16px;
+  }
+
+  .jonko-cta-button {
+    font-size: 14px;
+    padding: 12px 18px;
+    width: 90%;
+  }
+
+  .jonko-room-start {
+    width: 92vw;
+    max-width: 420px;
+    margin-bottom: 40px;
+  }
+
+  .jonko-room-start.exiting {
+    width: 80vw;
+    max-width: 80vw;
+    margin: 0;
+  }
+}
+
+/* Room page */
+.jonko-room-container {
+  min-height: 100vh;
+  display: flex;
+  padding: 0 10%;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.jonko-room {
+  width: 80vw;
+  max-width: 80vw;
+  margin: -200px 0;
+  display: block;
+  object-fit: contain;
+}
+
+.svg-link:hover {
+  filter: brightness(150%);
+  cursor: pointer;
 }
