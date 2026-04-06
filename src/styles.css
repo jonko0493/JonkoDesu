@@ -291,32 +291,39 @@ code {
 
 /* About Me */
 .about-viewport {
-  min-height: 100vh;
+  height: 100vh;
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
-  padding: 40px;
+  justify-content: flex-start;
+  padding: 4vh 5vw 0 5vw;
+  overflow: hidden;
 }
 
 .monitor {
-  width: 900px;
+  width: 100%;
+  max-width: 1600px;
+  flex: 1;
   background: linear-gradient(#4a4a4a,#2e2e2e);
   border-radius: 12px;
   padding: 20px 20px 0 20px;
   box-shadow: 0 15px 30px rgba(0,0,0,0.6), inset 0 6px 0 rgba(255,255,255,0.03);
   display: flex;
   flex-direction: column;
-  align-items: center;
-  margin-bottom: 0;
+  align-items: stretch;
+  min-height: 0;
 }
 
 .bezel {
   width: 100%;
+  flex: 1;
   background: var(--monitor-dark);
-  border-radius: 6px;
+  border-radius: 6px 6px 0 0;
   padding: 24px 24px 0 24px;
   box-shadow: inset 0 8px 0 rgba(0,0,0,0.2);
+  display: flex;
+  flex-direction: column;
+  min-height: 0;
 }
 
 .screen {
@@ -324,10 +331,13 @@ code {
   border-radius: 8px 8px 0 0;
   padding: 28px 28px 36px 28px;
   color: var(--muted);
-  min-height: 480px;
+  flex: 1;
+  min-height: 0;
   position: relative;
   overflow: hidden;
   box-shadow: inset 0 8px 30px rgba(0,0,0,0.6);
+  display: flex;
+  flex-direction: column;
 }
 
 .monitor-label {
@@ -343,7 +353,6 @@ code {
 }
 
 .monitor-stand {
-  margin-top: 0;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -352,7 +361,7 @@ code {
 
 .stand-neck {
   width: 80px;
-  height: 80px;
+  height: 60px;
   background: #2b2b2b;
   border-radius: 4px;
 }
@@ -375,7 +384,7 @@ code {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin-bottom: 18px;
+  margin-bottom: 20px;
 }
 
 .screen-header h1 {
@@ -387,7 +396,7 @@ code {
 
 .top-nav {
   display: flex;
-  gap: 10px;
+  gap: 6px;
   align-items: center;
 }
 
@@ -409,18 +418,29 @@ code {
 }
 
 .monitor-content {
+  flex: 1;
+  min-height: 0;
   display: flex;
-  justify-content: center;
-  align-items: flex-start;
+  flex-direction: column;
 }
 
 .card {
   width: 100%;
+  flex: 1;
   background: var(--card-purple);
   border-radius: 16px;
   padding: 32px 36px 28px 36px;
   color: #fff;
+  display: flex;
+  flex-direction: column;
   box-shadow: 0 10px 30px rgba(0,0,0,0.35);
+}
+
+.card-body {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
 .card h2 {
@@ -462,115 +482,86 @@ code {
   color: #fff;
 }
 
-@media (max-width: 480px) {
-  html, body {
-    overflow-y: auto;
-    height: auto;
-  }
-
-  .about-viewport{
-    padding: 12px;
+/* Mobile: monitor wider than viewport — crops on sides like the Figma design */
+@media (max-width: 768px) {
+  .about-viewport {
+    padding: 10px 0 0 0;
     justify-content: flex-start;
     align-items: center;
   }
 
-  .monitor{
-    width: min(92vw, 420px);
-    padding: 12px 12px 0 12px;
-    border-radius: 10px;
+  .monitor {
+    width: 120vw;
+    border-radius: 16px 16px 0 0;
+    padding: 16px 16px 0 16px;
   }
 
-  .bezel{
-    padding: 10px 10px 0 10px;
-    border-radius: 8px;
+  .bezel {
+    padding: 16px 16px 0 16px;
   }
 
-  .monitor-label{
-    padding: 8px 0 12px 0;
-    font-size: 11px;
+  .screen {
+    padding: 20px 20px 28px 20px;
+    overflow-y: auto;
+    max-height: calc(100vh - 160px);
   }
 
-  .screen{
-    padding: 18px 18px 28px 18px;
-    min-height: calc(100vh - 160px);
-    box-shadow: inset 0 8px 24px rgba(0,0,0,0.65);
-    overflow: auto;
-    border-radius: 6px 6px 0 0;
+  .screen-header {
+    margin-bottom: 16px;
   }
 
-  .screen-header h1{
-    font-size: 32px;
+  .screen-header h1 {
+    font-size: 24px;
   }
 
-  .top-nav{
-    gap: 8px;
-  }
-
-  .pill{
+  .pill {
     padding: 6px 10px;
-    font-size: 14px;
+    font-size: 13px;
   }
 
-  .monitor-content{
-    justify-content: center;
-  }
-
-  .card{
-    padding: 22px;
+  .card {
+    padding: 24px 22px 22px 22px;
     border-radius: 14px;
-    max-width: 100%;
   }
 
-  .card h2{
-    font-size: 20px;
+  .card h2 {
+    font-size: 22px;
     margin-bottom: 14px;
   }
 
-  .card p{
+  .card p {
     font-size: 14px;
   }
 
-  .socials{
+  .socials {
     gap: 20px;
-    font-size: 28px;
-    margin-top: 20px;
+    font-size: 30px;
+    margin-top: 22px;
   }
 
-  .monitor-stand{
-    margin-top: -20px;
-    width: auto;
+  .monitor-label {
+    font-size: 11px;
+    padding: 8px 0 12px 0;
+  }
+
+  .monitor-stand {
     align-items: center;
   }
 
-  .stand-neck{
+  .stand-neck {
     width: 72px;
-    height: 12px;
-    border-radius: 4px;
-    box-shadow: inset 0 3px 0 rgba(255,255,255,0.02);
+    height: 40px;
   }
 
-  .stand-base{
+  .stand-base {
     width: 180px;
-    height: 18px;
-    border-radius: 6px;
-    letter-spacing: 2px;
-    box-shadow: 0 12px 24px rgba(0,0,0,0.55);
-    font-size: 12px;
   }
 }
 
-@media (min-width: 481px) and (max-width: 768px) {
-  .monitor{
-    width: min(88vw, 680px);
-  }
-
-  .screen{
-    padding: 22px;
-    min-height: 520px;
-  }
-
-  .monitor-stand{
-    margin-top: -22px;
+@media (max-width: 480px) {
+  .pill {
+    padding: 5px 9px;
+    font-size: 12px;
   }
 }
 /* LCD scanline + flicker overlay */
