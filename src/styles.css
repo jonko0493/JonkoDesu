@@ -667,6 +667,21 @@ code {
   .stand-base {
     width: 180px;
   }
+
+  .project-card {
+    flex-direction: column;
+    gap: 16px;
+    padding: 16px;
+  }
+
+  .project-card-image {
+    width: 100%;
+    aspect-ratio: 1;
+  }
+
+  .project-card-content h2 {
+    font-size: 22px;
+  }
 }
 
 @media (max-width: 480px) {
