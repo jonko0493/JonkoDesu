@@ -467,3 +467,98 @@
 .st92 {
     fill: #13a79e;
 }
+/* ─── SVG Animations ──────────────────────────────────────────────────────── */
+
+/* Axolotl: gentle bob up and down in the aquarium */
+#axolotl {
+    animation: axolotlBob 3s ease-in-out infinite;
+}
+
+@keyframes axolotlBob {
+    0%, 100% { transform: translateY(0); }
+    50%      { transform: translateY(-25px); }
+}
+
+/* Clock: minute hand rotates around the clock-face hub */
+#clock-hand {
+    transform-box: fill-box;
+    transform-origin: 70% 79%;
+    animation: clockMinute 60s linear infinite;
+}
+
+@keyframes clockMinute {
+    from { transform: rotate(0deg); }
+    to   { transform: rotate(360deg); }
+}
+
+/* Coffee: steam wisps rise and fade, staggered */
+#Cofee_Steam path:nth-child(1) { animation: steamRise 2.4s ease-in-out infinite; }
+#Cofee_Steam path:nth-child(2) { animation: steamRise 2.4s ease-in-out infinite; animation-delay: 0.8s; }
+#Cofee_Steam path:nth-child(3) { animation: steamRise 2.4s ease-in-out infinite; animation-delay: 1.6s; }
+
+@keyframes steamRise {
+    0%   { transform: translateY(0);    opacity: 0.85; }
+    70%  { transform: translateY(-45px); opacity: 0.3; }
+    100% { transform: translateY(-65px); opacity: 0; }
+}
+
+/* About Me monitor: chevron groups pulse in sequence like a loading bar */
+#about-me-chevrons-1,
+#about-me-chevrons-2,
+#about-me-chevrons-3 {
+    animation: chevronPulse 1.5s ease-in-out infinite;
+    animation-fill-mode: backwards;
+}
+
+#about-me-chevrons-1 { animation-delay: 0s; }
+#about-me-chevrons-2 { animation-delay: 0.5s; }
+#about-me-chevrons-3 { animation-delay: 1.0s; }
+
+@keyframes chevronPulse {
+    0%   { opacity: 0; }
+    20%  { opacity: 1; }
+    50%  { opacity: 1; }
+    70%  { opacity: 0; }
+    100% { opacity: 0; }
+}
+
+/* Wii: disc drive slot intermittently glows blue */
+#wii-disc-drive {
+    animation: wiiDiscGlow 5s ease-in-out infinite;
+}
+
+@keyframes wiiDiscGlow {
+    0%, 55%, 100% { filter: none; }
+    65%, 90%      { filter: drop-shadow(0 0 12px #4dc1b7) brightness(1.5); }
+}
+
+/* Aquarium bubbles: rise, grow, and fade out, staggered */
+#Bubbles > * {
+    transform-box: fill-box;
+    transform-origin: center;
+    animation: bubbleRise 3.5s ease-in infinite;
+}
+
+#Bubbles > *:nth-child(1)  { animation-delay: 0.0s; }
+#Bubbles > *:nth-child(2)  { animation-delay: 0.3s; }
+#Bubbles > *:nth-child(3)  { animation-delay: 0.6s; }
+#Bubbles > *:nth-child(4)  { animation-delay: 0.9s; }
+#Bubbles > *:nth-child(5)  { animation-delay: 1.2s; }
+#Bubbles > *:nth-child(6)  { animation-delay: 1.5s; }
+#Bubbles > *:nth-child(7)  { animation-delay: 1.8s; }
+#Bubbles > *:nth-child(8)  { animation-delay: 2.1s; }
+#Bubbles > *:nth-child(9)  { animation-delay: 2.4s; }
+#Bubbles > *:nth-child(10) { animation-delay: 2.7s; }
+#Bubbles > *:nth-child(11) { animation-delay: 3.0s; }
+#Bubbles > *:nth-child(12) { animation-delay: 3.3s; }
+#Bubbles > *:nth-child(13) { animation-delay: 0.15s; }
+#Bubbles > *:nth-child(14) { animation-delay: 0.45s; }
+#Bubbles > *:nth-child(15) { animation-delay: 0.75s; }
+#Bubbles > *:nth-child(16) { animation-delay: 1.05s; }
+#Bubbles > *:nth-child(17) { animation-delay: 1.35s; }
+
+@keyframes bubbleRise {
+    0%   { transform: translateY(0)     scale(1);   opacity: 0.5;  }
+    70%  { transform: translateY(-70px) scale(1.6); opacity: 0.25; }
+    100% { transform: translateY(-100px) scale(2);  opacity: 0;    }
+}
