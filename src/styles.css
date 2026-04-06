@@ -43,6 +43,7 @@ code {
   will-change: opacity, transform;
   transform: translateY(0);
   opacity: 1;
+  overflow: hidden;
 }
 
 .jonko-cta {
@@ -101,22 +102,25 @@ code {
   margin: 0;
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: flex-end;
+  flex: 1;
+  overflow: visible;
 }
 
 .jonko-room-start {
-  width: 65vw;
-  max-width: 65vw;
-  margin: 0 -200px;
+  /* Square SVG: height-capped so it stays reasonable on ultrawide monitors */
+  height: min(72vh, 55vw);
+  width: auto;
+  max-width: none;
   display: block;
-  object-fit: contain;
-  transition: width 360ms ease, max-width 360ms ease, margin 360ms ease, opacity 360ms ease;
+  margin-right: -8%;
+  transition: opacity 400ms ease, transform 400ms ease;
+  transform-origin: center center;
 }
 
 .jonko-room-start.exiting {
-  width: 80vw;
-  max-width: 80vw;
-  margin: -17vh 0 0 -30vw;
+  opacity: 0;
+  transition: opacity 300ms ease;
 }
 
 @media (max-width: 1024px) {
@@ -129,8 +133,10 @@ code {
   }
 
   .jonko-room-start {
-    width: 70vw;
-    margin: 0 -140px;
+    height: min(65vh, 55vw);
+    width: auto;
+    max-width: none;
+    margin-right: -5%;
   }
 }
 
@@ -165,21 +171,20 @@ code {
 
   .jonko-room-start-container {
     height: auto;
+    flex: none;
     margin: 20px 0 60px 0;
   }
 
   .jonko-room-start {
-    width: 86vw;
+    height: auto;
+    width: 90vw;
     max-width: 520px;
     margin: 0;
-    transform: translateY(0);
-    max-height: none;
   }
 
   .jonko-room-start.exiting {
-    width: 80vw;
-    max-width: 80vw;
-    margin: 0;
+    opacity: 0;
+    transform: scale(1.1);
   }
 }
 
@@ -200,19 +205,69 @@ code {
   }
 
   .jonko-room-start {
+    height: auto;
     width: 92vw;
     max-width: 420px;
     margin-bottom: 40px;
   }
 
   .jonko-room-start.exiting {
-    width: 80vw;
-    max-width: 80vw;
-    margin: 0;
+    opacity: 0;
+    transform: scale(1.1);
   }
 }
 
-/* Room page */
+/* Room overlay (homepage room mode) */
+.jonko-room-overlay {
+  position: fixed;
+  inset: 0;
+  background: linear-gradient(180deg, var(--gradient-top-color) 0%, var(--gradient-bottom-color) 100%);
+  opacity: 0;
+  pointer-events: none;
+  overflow: hidden;
+  z-index: 10;
+  /* No opacity transition — the overlay background matches the page gradient,
+     so making it visible instantly is seamless. The zoom is the transition. */
+}
+
+.jonko-room-overlay.active {
+  opacity: 1;
+}
+
+.jonko-room-overlay.panning {
+  pointer-events: auto;
+  cursor: grab;
+  touch-action: none;
+}
+
+.jonko-room-overlay.panning:active {
+  cursor: grabbing;
+}
+
+/* Scale-wrapper: centering container; transform/transition set via inline style */
+.jonko-room-scale-wrapper {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transform-origin: center center;
+}
+
+.jonko-room-pan-inner {
+  flex-shrink: 0;
+  width: max(160vw, 130vh);
+  height: max(160vw, 130vh);
+  user-select: none;
+}
+
+.jonko-room-pan-inner .jonko-room {
+  width: 100%;
+  height: 100%;
+  display: block;
+}
+
+/* Room page (direct /room route) */
 .jonko-room-container {
   min-height: 100vh;
   display: flex;
@@ -221,12 +276,12 @@ code {
   justify-content: flex-start;
 }
 
-.jonko-room {
+.jonko-room-container .jonko-room {
   width: 80vw;
   max-width: 80vw;
+  height: auto;
   margin: -200px 0;
   display: block;
-  object-fit: contain;
 }
 
 .svg-link:hover {
