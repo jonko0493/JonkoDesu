@@ -8,7 +8,7 @@ export const Route = createFileRoute('/')({ component: App })
 type Mode = 'cta' | 'entering' | 'room'
 
 const ROOM_SCALE = 1.6
-const ANIM_MS = 650
+const ANIM_MS = 950
 
 function getRoomDisplaySize() {
   return Math.max(window.innerWidth * ROOM_SCALE, window.innerHeight * 1.3)
@@ -127,7 +127,7 @@ function App() {
     if (zoomFrom && zoomActive) {
       return {
         transform: 'translate(0px, 0px) scale(1)',
-        transition: `transform ${ANIM_MS}ms cubic-bezier(0.22, 1, 0.36, 1)`,
+        transition: `transform ${ANIM_MS}ms cubic-bezier(0.16, 1, 0.3, 1)`,
       }
     }
     return {}

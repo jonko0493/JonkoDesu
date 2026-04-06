@@ -13,6 +13,7 @@ function RootComponent() {
   return (
     <>
       <Outlet />
+      <div className='lcd-overlay' aria-hidden='true' />
       <TanStackDevtools
         config={{
           position: 'bottom-right',
