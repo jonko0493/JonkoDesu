@@ -12,8 +12,8 @@ in the order we plan to translate them.)
 
 <iconheader title="The Series of Haruhi Suzumiya (Chokuretsu)" icon="cib:nintendo-3ds"></iconheader>
 
-_Chokuretsu_ (Nintendo DS, 2009) is the project that started it all&mdash;the entire club was founded to translate this one game. It took us four years,
-but we did in fact finally do it: the full game can now finally be played in English from start to finish. There are still other projects
+[_Chokuretsu_](https://haroohie.club/chokuretsu) (Nintendo DS, 2009) is the project that started it all&mdash;the entire club was founded to translate this one game.
+It took us four years, but we did in fact finally do it: the full game can now finally be played in English from start to finish. There are still other projects
 in flight to translate the game into languages such as Italian and Brazilian Portuguese.
 
 [NitroPacker](/#/my-projects/nitro-packer) predated this project, but was open sourced and improved as a result of it. 
