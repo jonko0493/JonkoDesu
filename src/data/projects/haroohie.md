@@ -64,11 +64,6 @@ If these games become playable at some point, we will likely translate them.
 _Yakusoku_ (PSP, 2007) is the first Haruhi game to be released and also the only one to have a translation not made by us. We probably won't go back and re-translate it,
 but at the very least we will likely make the existing patch for this game more easily accessible by hosting it on our website with appropriate credit.
 
-<iconheader title="The Feature Phone Games" icon="arcticons:gree-plus"></iconheader>
-
-There are two GREE feature phone games (_Danketsu_ and _Tensei_) that certainly exist somewhere. There are also efforts to create feature phone emulators that we know about.
-If these games become playable at some point, we will likely translate them.
-
 <iconheader title="Doujin Games" icon="game-icons:pc"></iconheader>
 
 No guarantees here, but if we have time and interest after all else is finished, we may translate some of the doujin games as well.
