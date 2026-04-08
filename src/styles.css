@@ -509,6 +509,10 @@ code {
   font-weight: 600;
 }
 
+.project-link:hover {
+  text-decoration: underline;
+}
+
 .project-link-btn {
   display: flex;
   align-items: center;
@@ -533,6 +537,74 @@ code {
   min-height: 0;
   display: flex;
   flex-direction: column;
+}
+
+.markdown-content {
+  color: rgba(255,255,255,0.88);
+  line-height: 1.6;
+  font-size: 15px;
+}
+
+.markdown-content p {
+  margin: 0 0 16px 0;
+}
+
+.markdown-content h1 {
+  font-size: 28px;
+  font-weight: 700;
+  color: #fff;
+  margin: 0 0 20px 0;
+}
+
+.markdown-content h2 {
+  font-size: 22px;
+  font-weight: 700;
+  color: #fff;
+  margin: 24px 0 14px 0;
+}
+
+.markdown-content h3 {
+  font-size: 18px;
+  font-weight: 700;
+  color: #fff;
+  margin: 20px 0 10px 0;
+}
+
+.markdown-content h4,
+.markdown-content h5,
+.markdown-content h6 {
+  font-size: 15px;
+  font-weight: 700;
+  color: #fff;
+  margin: 16px 0 8px 0;
+}
+
+.markdown-content a {
+  color: #0cf;
+}
+
+.markdown-content a:hover {
+  text-decoration: underline;
+}
+
+.markdown-content img {
+  margin: 0 auto;
+  max-width: 100px;
+}
+
+.project-header-image {
+  max-width: 200px;
+  margin: 0 auto;
+}
+
+.icon-header h2 {
+  font-size: 22px;
+  font-weight: 700;
+  color: #fff;
+  margin: 24px 0 14px 0;
+  display: flex;
+  align-items: center;
+  gap: 10px;
 }
 
 .card {

@@ -5,4 +5,6 @@ export interface Project {
   link?: string
   image?: string
   order?: number
+  slug: string
+  markdown?: string
 }

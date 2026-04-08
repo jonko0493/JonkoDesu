@@ -1,5 +1,6 @@
+import { Link } from '@tanstack/react-router'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faArrowUpRightFromSquare } from '@fortawesome/free-solid-svg-icons'
+import { faArrowUpRightFromSquare, faFileLines } from '@fortawesome/free-solid-svg-icons'
 import type { Project } from '../data/project-types'
 
 interface Props {
@@ -14,7 +15,17 @@ export function ProjectCard({ project }: Props) {
       </div>
 
       <div className='project-card-content'>
-        <h2>{project.title}</h2>
+        {project.markdown !== undefined && (
+          <Link
+            to='/my-projects/$project'
+            params={{ project: project.slug }}
+            className='project-link'
+            aria-label={`View details for ${project.title}`}
+          >
+            <h2>{project.title}</h2>
+          </Link>
+        ) || <h2>{project.title}</h2>}
+        
         <p>{project.description}</p>
 
         <div className='project-card-footer'>

@@ -1,0 +1,1 @@
+My YouTube channel is cool. You should like and subscribe to all of my videos, especially the ones that got me haters.
