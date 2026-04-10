@@ -1,6 +1,5 @@
-The Haroohie Translation Club is a project that changed my life. Starting with a random GBATemp forum thread in 2021 and
-most recently culminating with the 2026 release of the _Suzumiya Haruhi no Chokuretsu_ English patch, the club's accomplishments
-speak for themselves. On a personal level, the club has introduced me to some of my closest friends (including people from all over
+Haroohie Translation Club（ハルーヒー翻訳クラブ）は僕の人生を変えたプロジェクトです。2021年何気ないGBATempのフォラムスレッドから始まり、2026年涼宮ハルヒの直列の英語翻訳パッチをリーリスしたことがここ最近の集大成で、クラブのこの達成により努力に実がなったと思います。
+On a personal level, the club has introduced me to some of my closest friends (including people from all over
 the world I would have never met otherwise), inspired me to improve my Japanese (which led to me living in Tokyo), and spawned from
 it essentially every other project listed on this site. The genesis for it all came from the passion that so many showed in responding
 to a random Discord ping from a Haruhicord admin inviting them to join my little project.

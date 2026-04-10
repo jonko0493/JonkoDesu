@@ -1,28 +1,28 @@
 {
   "nav": {
-    "home": "",
-    "about": "",
-    "projects": ""
+    "home": "ホーム",
+    "about": "ジョンコについて",
+    "projects": "プロジェクト"
   },
   "home": {
-    "greeting": "",
-    "tagline": "",
-    "cta": ""
+    "greeting": "ヤッホー！ジョンコです。",
+    "tagline": "同人ゲームデベロッパー・ROMハッカー・YouTuber",
+    "cta": "どこでも押してみてください"
   },
   "about": {
-    "title": "",
-    "heading": "",
-    "bio1": "",
-    "bio2": "",
+    "title": "ジョンコについて",
+    "heading": "同人ゲームデベロッパー・ROMハッカー・YouTuber",
+    "bio1": "ジョンコです。ROMハッカーや、同人ゲームデベロッパー、YouTuberです。僕のメインのプロジェクトは<haroohieLink>Haroohie Translation Club</haroohieLink>です。そのクラブで、日本のゲームの翻訳を作るために、プロジェクトリーダーとメインのROMハッカーとして活躍しています。",
+    "bio2": "ROMハックについて解説しているYouTubeチャンネルやブログで僕のことを知っているかもしれませんね。今、才能があふれるチームと作っている秘密のゲームのプロジェクトもあります。",
     "social": {
-      "twitter": "",
-      "youtube": "",
-      "bluesky": "",
-      "github": ""
+      "twitter": "Twitter",
+      "youtube": "YouTube",
+      "bluesky": "Bluesky",
+      "github": "GitHub"
     }
   },
   "projects": {
-    "title": "",
+    "title": "プロジェクト",
     "noContent": "",
     "viewDetails": "",
     "visit": ""
