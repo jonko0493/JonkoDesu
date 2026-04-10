@@ -1,6 +1,7 @@
 import { Link } from '@tanstack/react-router'
+import { useTranslation } from 'react-i18next'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faArrowUpRightFromSquare, faFileLines } from '@fortawesome/free-solid-svg-icons'
+import { faArrowUpRightFromSquare } from '@fortawesome/free-solid-svg-icons'
 import type { Project } from '../data/project-types'
 
 interface Props {
@@ -8,6 +9,8 @@ interface Props {
 }
 
 export function ProjectCard({ project }: Props) {
+  const { t } = useTranslation()
+
   return (
     <article className='project-card'>
       <div className='project-card-image'>
@@ -20,7 +23,7 @@ export function ProjectCard({ project }: Props) {
             to='/my-projects/$project'
             params={{ project: project.slug }}
             className='project-link'
-            aria-label={`View details for ${project.title}`}
+            aria-label={t('projects.viewDetails', { title: project.title })}
           >
             <h2>{project.title}</h2>
           </Link>
@@ -40,7 +43,7 @@ export function ProjectCard({ project }: Props) {
               target='_blank'
               rel='noopener noreferrer'
               className='project-link-btn'
-              aria-label={`Visit ${project.title}`}
+              aria-label={t('projects.visit', { title: project.title })}
             >
               <FontAwesomeIcon icon={faArrowUpRightFromSquare} />
             </a>

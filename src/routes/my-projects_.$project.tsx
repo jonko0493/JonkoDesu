@@ -3,21 +3,27 @@ import ReactMarkdown from 'react-markdown'
 import remarkGfm from 'remark-gfm'
 import rehypeRaw from 'rehype-raw'
 import { Icon } from '@iconify/react'
+import { useTranslation } from 'react-i18next'
 import { MonitorLayout } from '../components/MonitorLayout'
-import { projects } from '../data/projects'
+import { getProjects } from '../data/projects'
 import { IconHeader } from '@/components/IconHeader'
 
 export const Route = createFileRoute('/my-projects_/$project')({
   loader: ({ params }) => {
-    const project = projects.find((p) => p.slug === params.project)
-    if (!project) throw notFound()
-    return project
+    // Validate the slug exists using base English data; locale content is loaded in the component
+    const exists = getProjects('en').some((p) => p.slug === params.project)
+    if (!exists) throw notFound()
+    return { slug: params.project }
   },
   component: ProjectDetailPage,
 })
 
 function ProjectDetailPage() {
-  const project = Route.useLoaderData()
+  const { slug } = Route.useLoaderData()
+  const { t, i18n } = useTranslation()
+  const project = getProjects(i18n.language).find((p) => p.slug === slug)
+
+  if (!project) throw notFound()
 
   return (
     <MonitorLayout title={project.title} activeNav='projects' scrollable>
@@ -36,7 +42,7 @@ function ProjectDetailPage() {
               {project.markdown}
             </ReactMarkdown>
           ) : (
-            <p>No content available for this project.</p>
+            <p>{t('projects.noContent')}</p>
           )}
         </div>
       </main>

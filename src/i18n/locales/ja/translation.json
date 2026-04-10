@@ -1,0 +1,30 @@
+{
+  "nav": {
+    "home": "",
+    "about": "",
+    "projects": ""
+  },
+  "home": {
+    "greeting": "",
+    "tagline": "",
+    "cta": ""
+  },
+  "about": {
+    "title": "",
+    "heading": "",
+    "bio1": "",
+    "bio2": "",
+    "social": {
+      "twitter": "",
+      "youtube": "",
+      "bluesky": "",
+      "github": ""
+    }
+  },
+  "projects": {
+    "title": "",
+    "noContent": "",
+    "viewDetails": "",
+    "visit": ""
+  }
+}

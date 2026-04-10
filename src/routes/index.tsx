@@ -1,6 +1,7 @@
 import { createFileRoute } from '@tanstack/react-router'
 import { useState, useRef, useCallback, useEffect } from 'react'
 import type { CSSProperties } from 'react'
+import { useTranslation } from 'react-i18next'
 import { RoomSVG } from '../components/RoomSVG'
 
 export const Route = createFileRoute('/')({ component: App })
@@ -31,6 +32,8 @@ function getPanBounds() {
 }
 
 function App() {
+  const { t, i18n } = useTranslation()
+  const locale = i18n.language.split('-')[0]
   const [mode, setMode] = useState<Mode>('cta')
   const [pan, setPan] = useState({ x: 0, y: 0 })
   const [roomSize, setRoomSize] = useState(0)
@@ -152,15 +155,16 @@ function App() {
           }}
         >
           <div className={`jonko-cta${mode === 'entering' ? ' exiting' : ''}`}>
-            <div className='jonko-cta-header'>Hi, I'm Jonko!</div>
-            <div className='jonko-cta-subheader'>Homebrew Developer, ROM Hacker and YouTuber</div>
-            <div className='jonko-cta-button'>Click anywhere to start</div>
+            <div className='jonko-cta-header'>{t('home.greeting')}</div>
+            <div className='jonko-cta-subheader'>{t('home.tagline')}</div>
+            <div className='jonko-cta-button'>{t('home.cta')}</div>
           </div>
 
           <div className='jonko-room-start-container'>
             <img
               ref={imgRef}
-              src='/room_en.svg'
+              src={`/room_${locale}.svg`}
+              onError={(e) => { (e.currentTarget as HTMLImageElement).src = '/room_en.svg' }}
               className={`jonko-room-start${mode === 'entering' ? ' exiting' : ''}`}
             />
           </div>

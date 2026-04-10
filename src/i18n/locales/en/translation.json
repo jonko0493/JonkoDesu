@@ -1,0 +1,30 @@
+{
+  "nav": {
+    "home": "Home",
+    "about": "About",
+    "projects": "Projects"
+  },
+  "home": {
+    "greeting": "Hi, I'm Jonko!",
+    "tagline": "Homebrew Developer, ROM Hacker and YouTuber",
+    "cta": "Click anywhere to start"
+  },
+  "about": {
+    "title": "About Me",
+    "heading": "Jonko, YouTuber and ROM Hacker",
+    "bio1": "I'm Jonko — a ROM hacker, homebrew developer, and YouTuber. My primary work is with the <haroohieLink>Haroohie Translation Club</haroohieLink>, where I serve as project lead and main ROM hacker, producing fan translations of Japanese games.",
+    "bio2": "You may also know me from my <youtubeLink>YouTube channel</youtubeLink> or my <blogLink>blogs</blogLink> where I explain how ROM hacking works. I also have an upcoming (secret) homebrew game I'm developing with a talented team.",
+    "social": {
+      "twitter": "Twitter",
+      "youtube": "YouTube",
+      "bluesky": "Bluesky",
+      "github": "GitHub"
+    }
+  },
+  "projects": {
+    "title": "My Projects",
+    "noContent": "No content available for this project.",
+    "viewDetails": "View details for {{title}}",
+    "visit": "Visit {{title}}"
+  }
+}

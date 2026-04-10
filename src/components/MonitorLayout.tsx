@@ -1,5 +1,7 @@
 import { Link } from '@tanstack/react-router'
+import { useTranslation } from 'react-i18next'
 import type { ReactNode } from 'react'
+import { LanguageSwitcher } from './LanguageSwitcher'
 
 type ActiveNav = 'home' | 'about' | 'projects'
 
@@ -11,6 +13,8 @@ interface Props {
 }
 
 export function MonitorLayout({ title, activeNav, children, scrollable }: Props) {
+  const { t } = useTranslation()
+
   return (
     <div className='about-viewport'>
       <div className='monitor'>
@@ -19,10 +23,11 @@ export function MonitorLayout({ title, activeNav, children, scrollable }: Props)
             <header className='screen-header'>
               <h1>{title}</h1>
               <nav className='top-nav'>
-                <Link to='/' className={`pill${activeNav === 'home' ? ' active' : ''}`}>Home</Link>
-                <Link to='/about-me' className={`pill${activeNav === 'about' ? ' active' : ''}`}>About</Link>
-                <Link to='/my-projects' className={`pill${activeNav === 'projects' ? ' active' : ''}`}>Projects</Link>
+                <Link to='/' className={`pill${activeNav === 'home' ? ' active' : ''}`}>{t('nav.home')}</Link>
+                <Link to='/about-me' className={`pill${activeNav === 'about' ? ' active' : ''}`}>{t('nav.about')}</Link>
+                <Link to='/my-projects' className={`pill${activeNav === 'projects' ? ' active' : ''}`}>{t('nav.projects')}</Link>
               </nav>
+              <LanguageSwitcher />
             </header>
             {children}
           </div>
